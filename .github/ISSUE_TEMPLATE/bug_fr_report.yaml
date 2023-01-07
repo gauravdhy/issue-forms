@@ -45,8 +45,8 @@ body:
       label: Top Ten Candidate?
       description: Is this a potential top ten issue?
       options:
-        - No 
-        - Yes 
+        - "No" 
+        - "Yes" 
     validations:
       required: true
   - type: checkboxes
