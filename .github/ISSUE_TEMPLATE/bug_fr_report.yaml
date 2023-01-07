@@ -1,0 +1,76 @@
+name: Feature Request or Engineering Bug Report
+description: File a Feature report
+title: "[FR/BR]: "
+labels: ["feature", "bug"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+  - type: input
+    id: customer
+    attributes:
+      label: Customer
+    validations:
+      required: true
+  - type: input
+    id: ARR
+    attributes:
+      label: ARR
+    validations:
+      required: true  
+  - type: textarea
+    id: Details
+    attributes:
+      label: Details
+      description: Tell us more
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: priority-level
+    attributes:
+      label: Priority Level
+      options:
+        - Critical
+        - Standard
+    validations:
+      required: true
+  - type: dropdown
+    id: top-ten-candidate
+    attributes:
+      label: Top Ten Candidate?
+      description: Is this a potential top ten issue?
+      options:
+        - No (Default)
+        - Yes (Edge)
+    validations:
+      required: true
+  - type: checkboxes
+    id: business-impact
+    attributes:
+      label: Customer Business Impact
+      description: What is the importance of this issue from the customer's point of view
+      options:
+        - label: Deal Blocker 
+        - label: Renewal Blocker
+        - label: Upsell Blocker
+        - label: Customer Sentiment Issue
+        - label: Nice To Have
+          required: true
+- type: checkboxes
+    id: impact-topic
+    attributes:
+      label: Impact Topic
+      description: What area does this request relate to?
+      options:
+        - label: SSH
+        - label: K8
+        - label: Database
+        - label: Application
+        - label: Desktop
+        - label: Integrations
+          required: true
