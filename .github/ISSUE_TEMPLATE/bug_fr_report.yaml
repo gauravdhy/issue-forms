@@ -61,7 +61,7 @@ body:
         - label: Customer Sentiment Issue
         - label: Nice To Have
           required: true
-- type: checkboxes
+  - type: checkboxes
     id: impact-topic
     attributes:
       label: Impact Topic
