@@ -3,7 +3,7 @@ description: File a Feature report
 title: "Formal Request as [FR or BR]: Customer | ARR | Priority | Description"
 labels: ["feature", "bug"]
 assignees:
-  - gauravdhy
+  - "gauravdhy"
 body:
   - type: markdown
     attributes:
