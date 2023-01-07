@@ -1,14 +1,14 @@
 name: Feature Request or Engineering Bug Report
 description: File a Feature report
-title: "[FR/BR]: "
+title: "Formal Request as [FR or BR]: Customer | ARR | Priority | Description"
 labels: ["feature", "bug"]
 assignees:
-  - octocat
+  - gauravdhy
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this report!
+        Thanks for submitting this request!
   - type: input
     id: customer
     attributes:
@@ -26,7 +26,7 @@ body:
     attributes:
       label: Details
       description: Tell us more
-      placeholder: Tell us what you see!
+      placeholder: Share more details with us. 
       value: "A bug happened!"
     validations:
       required: true
@@ -45,8 +45,8 @@ body:
       label: Top Ten Candidate?
       description: Is this a potential top ten issue?
       options:
-        - No (Default)
-        - Yes (Edge)
+        - No 
+        - Yes 
     validations:
       required: true
   - type: checkboxes
@@ -60,7 +60,8 @@ body:
         - label: Upsell Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
-          required: true
+      validations:
+      required: true
   - type: checkboxes
     id: impact-topic
     attributes:
@@ -73,4 +74,5 @@ body:
         - label: Application
         - label: Desktop
         - label: Integrations
-          required: true
+      validations:
+      required: true
