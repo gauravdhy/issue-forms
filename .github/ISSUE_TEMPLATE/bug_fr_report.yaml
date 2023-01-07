@@ -73,4 +73,4 @@ body:
         - label: Application
         - label: Desktop
         - label: Integrations    
-       required: true
+      required: true
