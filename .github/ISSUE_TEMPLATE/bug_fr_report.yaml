@@ -60,7 +60,6 @@ body:
         - label: Upsell Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
-      required: true
   - type: checkboxes
     id: impact-topic
     attributes:
@@ -72,5 +71,4 @@ body:
         - label: Database
         - label: Application
         - label: Desktop
-        - label: Integrations    
-      required: true
+        - label: Integrations
