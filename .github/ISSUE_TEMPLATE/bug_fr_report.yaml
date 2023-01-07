@@ -1,7 +1,6 @@
 name: Feature Request or Engineering Bug Report
 description: File a Feature report
-title: "Formal Request as [FR or BR]: Customer | ARR | Priority | Description"
-labels: ["feature", "bug"]
+title: "[FR or BR]: Customer | ARR | Priority | Description"
 assignees:
   - "gauravdhy"
 body:
@@ -40,10 +39,10 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: top-ten-candidate
+    id: potential-top-ten-candidate
     attributes:
-      label: Top Ten Candidate?
-      description: Is this a potential top ten issue?
+      label: Potential Top Ten Candidate?
+      description: Is this a potential top ten candidate?
       options:
         - "No" 
         - "Yes" 
