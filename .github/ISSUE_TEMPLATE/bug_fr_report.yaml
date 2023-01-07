@@ -61,7 +61,7 @@ body:
         - label: Customer Sentiment Issue
         - label: Nice To Have
       validations:
-      required: true
+        required: true
   - type: checkboxes
     id: impact-topic
     attributes:
@@ -75,4 +75,4 @@ body:
         - label: Desktop
         - label: Integrations
       validations:
-      required: true
+        required: true
