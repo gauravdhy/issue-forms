@@ -44,7 +44,7 @@ body:
       label: Details
       description: Tell us more
       placeholder: Share more details with us. 
-      value: "A bug happened!"
+      value: "New ask from the customer!"
     validations:
       required: true
   - type: dropdown
@@ -69,15 +69,14 @@ body:
       label: Customer Business Impact
       description: What is the importance of this issue from the customer's point of view
       options:
-        - label: Deal Blocker 
+        - label: Deal/Upsell Blocker 
         - label: Renewal Blocker
-        - label: Upsell Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
   - type: checkboxes
-    id: impact-topic
+    id: product-area
     attributes:
-      label: Impact Topic
+      label: Product Area
       description: What area does this request relate to?
       options:
         - label: SSH
