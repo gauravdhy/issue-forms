@@ -26,10 +26,10 @@ body:
       label: Revenue Impact (+ Net New / - Loss)
     validations:
       required: true  
-   - type: dropdown
+  - type: dropdown
     id: Revenue-Impact-Probability
     attributes:
-      label: Revenue Impatct Probability
+      label: Revenue Impact Probability
       options:
         - No Impact
         - Low
