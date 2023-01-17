@@ -20,6 +20,24 @@ body:
       label: ARR
     validations:
       required: true  
+  - type: input
+    id: Revenue-Impact
+    attributes:
+      label: Revenue Impact (+ Net New / - Loss)
+    validations:
+      required: true  
+   - type: dropdown
+    id: Revenue-Impact-Probability
+    attributes:
+      label: Revenue Impatct Probability
+      options:
+        - No Impact
+        - Low
+        - Medium
+        - High
+        - Certain
+    validations:
+      required: true 
   - type: textarea
     id: Details
     attributes:
@@ -38,16 +56,13 @@ body:
         - Standard
     validations:
       required: true
-  - type: dropdown
-    id: potential-top-ten-candidate
+  - type: textarea
+    id: other-customers
     attributes:
-      label: Potential Top Ten Candidate?
-      description: Is this a potential top ten candidate?
-      options:
-        - "No" 
-        - "Yes" 
-    validations:
-      required: true
+      label: Other Customers?
+      description: Other customers who have made the request
+      placeholder: Customer list
+      value: None
   - type: checkboxes
     id: business-impact
     attributes:
