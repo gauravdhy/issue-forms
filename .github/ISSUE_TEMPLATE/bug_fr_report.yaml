@@ -106,5 +106,4 @@ body:
     id: commitment
     attributes:
       label: Engineering Committed Timeframe/Release
-      value: "TBD"
-
+      value: TBD
