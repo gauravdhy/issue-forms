@@ -89,7 +89,7 @@ body:
   - type: input 
     id: linked-issues
     attributes:
-      label: Linked Issues
+      label: Linked Issues (separate by ; )
       value: None
   - type: dropdown
     id: engineering-effort-estimate
