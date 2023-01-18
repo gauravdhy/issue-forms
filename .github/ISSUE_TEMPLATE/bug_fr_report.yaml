@@ -60,9 +60,9 @@ body:
     id: action
     attributes:
       label: What action would you like the engineering/product to take?  
-      description: What do 
+      description: What do you want the engineering/product to do?
       placeholder: Share more details with us. 
-      value: "New ask from the customer!"
+      value: "Customer requesting fix by ..."
     validations:
       required: true
   - type: checkboxes
@@ -75,6 +75,11 @@ body:
         - label: Renewal Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
+  - type: input 
+    id: due-date
+    attributes:
+      label: Customer requested target timeline (if any)?
+      value: None
   - type: checkboxes
     id: product-area
     attributes:
