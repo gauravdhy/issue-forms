@@ -62,7 +62,7 @@ body:
       label: Customer Business Impact
       description: What is the importance of this issue from the customer's point of view
       options:
-        - label: Deal/Upsell Blocker 
+        - label: New Deal/Upsell Blocker 
         - label: Renewal Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
