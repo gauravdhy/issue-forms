@@ -72,7 +72,7 @@ body:
       label: Desired Outcome?  
       description: What do you want the engineering/product to do?
       placeholder: Share more details with us. 
-      value: "Customer requesting fix by ..."
+      value: Customer requesting fix by ___
     validations:
       required: true
   - type: input 
