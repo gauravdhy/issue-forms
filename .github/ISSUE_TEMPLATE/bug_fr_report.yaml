@@ -97,13 +97,11 @@ body:
       label: Effort Estimate
       options:
         - Estimate Unknown
-        - XXS
-        - XS
-        - S
-        - M
-        - L
-        - XL
-        - XXL
+        - X Large
+        - Large
+        - Medium
+        - Small
+        - Tiny
   - type: input 
     id: commitment
     attributes:
