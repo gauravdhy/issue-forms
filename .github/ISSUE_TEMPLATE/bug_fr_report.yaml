@@ -53,6 +53,7 @@ body:
       label: What is the potential impact of not addressing this request?
       description: Non Revenue Impact 
       options:
+        - label: Support Request
         - label: Customer Sentiment Issue
         - label: Nice To Have
   - type: textarea
