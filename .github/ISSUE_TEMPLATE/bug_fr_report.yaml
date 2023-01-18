@@ -47,15 +47,6 @@ body:
       value: "New ask from the customer!"
     validations:
       required: true
-  - type: dropdown
-    id: priority-level
-    attributes:
-      label: Priority Level
-      options:
-        - Critical
-        - Standard
-    validations:
-      required: true
   - type: checkboxes
     id: business-impact
     attributes:
