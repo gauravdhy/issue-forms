@@ -19,13 +19,13 @@ body:
     attributes:
       label: ARR
     validations:
-      required: true  
+      required: true
   - type: input
     id: revenue-impact
     attributes:
       label: Revenue Impact (+ Net New / - Loss)
     validations:
-      required: true  
+      required: true
   - type: dropdown
     id: revenue-impact-probability
     attributes:
@@ -37,7 +37,7 @@ body:
         - High
         - Certain
     validations:
-      required: true 
+      required: true
   - type: textarea
     id: details
     attributes:
