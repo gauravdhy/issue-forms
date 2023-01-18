@@ -91,6 +91,18 @@ body:
     attributes:
       label: Linked Issues
       value: None
+  - type: dropdown
+    id: engineering-effort-estimate
+    attributes:
+      label: Effort Estimate
+      options:
+        - XXS
+        - XS
+        - S
+        - M
+        - L
+        - XL
+        - XXL
   - type: input 
     id: commitment
     attributes:
