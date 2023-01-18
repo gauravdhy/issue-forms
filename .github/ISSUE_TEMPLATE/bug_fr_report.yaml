@@ -56,15 +56,6 @@ body:
         - Standard
     validations:
       required: true
-  - type: textarea
-    id: action
-    attributes:
-      label: Desired Outcome?  
-      description: What do you want the engineering/product to do?
-      placeholder: Share more details with us. 
-      value: "Customer requesting fix by ..."
-    validations:
-      required: true
   - type: checkboxes
     id: business-impact
     attributes:
@@ -75,6 +66,15 @@ body:
         - label: Renewal Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
+  - type: textarea
+    id: action
+    attributes:
+      label: Desired Outcome?  
+      description: What do you want the engineering/product to do?
+      placeholder: Share more details with us. 
+      value: "Customer requesting fix by ..."
+    validations:
+      required: true
   - type: input 
     id: due-date
     attributes:
