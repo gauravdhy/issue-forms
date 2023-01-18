@@ -102,4 +102,9 @@ body:
     attributes:
       label: Linked Issues
       value: None
+  - type: input 
+    id: commitment
+    attributes:
+      label: Committed Timeframe/Release
+      value: None
 
