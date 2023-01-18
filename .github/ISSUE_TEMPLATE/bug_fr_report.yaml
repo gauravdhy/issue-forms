@@ -66,6 +66,8 @@ body:
         - label: Renewal Blocker
         - label: Customer Sentiment Issue
         - label: Nice To Have
+      validations:
+      required: true
   - type: textarea
     id: action
     attributes:
