@@ -15,19 +15,19 @@ body:
     validations:
       required: true
   - type: input
-    id: ARR
+    id: arr
     attributes:
       label: ARR
     validations:
       required: true  
   - type: input
-    id: Revenue-Impact
+    id: revenue-impact
     attributes:
       label: Revenue Impact (+ Net New / - Loss)
     validations:
       required: true  
   - type: dropdown
-    id: Revenue-Impact-Probability
+    id: revenue-impact-probability
     attributes:
       label: Revenue Impact Probability
       options:
@@ -39,7 +39,7 @@ body:
     validations:
       required: true 
   - type: textarea
-    id: Details
+    id: details
     attributes:
       label: Details
       description: Tell us more
@@ -57,7 +57,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Action
+    id: action
     attributes:
       label: What action would you like the engineering/product to take?  
       description: What do 
@@ -93,8 +93,8 @@ body:
       label: Other Customers?
       value: None
   - type: input 
-    id: Linked Issues
+    id: linked-issues
     attributes:
-      label: Linked-Issues
+      label: Linked Issues
       value: None
 
