@@ -57,12 +57,14 @@ body:
     validations:
       required: true
   - type: textarea
-    id: other-customers
+    id: Action
     attributes:
-      label: Other Customers?
-      description: Other customers who have made the request
-      placeholder: Customer list
-      value: None
+      label: What action would you like the engineering/product to take?  
+      description: What do 
+      placeholder: Share more details with us. 
+      value: "New ask from the customer!"
+    validations:
+      required: true
   - type: checkboxes
     id: business-impact
     attributes:
@@ -85,3 +87,14 @@ body:
         - label: Application
         - label: Desktop
         - label: Integrations
+  - type: input
+    id: other-customers
+    attributes:
+      label: Other Customers?
+      value: None
+  - type: input 
+    id: Linked Issues
+    attributes:
+      label: Linked-Issues
+      value: None
+
