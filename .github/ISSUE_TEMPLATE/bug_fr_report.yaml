@@ -1,17 +1,17 @@
 name: Feature Request or Engineering Bug Report
 description: File a Feature report
-title: "[FR or BR]: Customer | ARR | Priority | Description"
+title: "[FR or BR]: Customer/Prospect | ARR | Priority | Description"
 assignees:
   - "gauravdhy"
 body:
   - type: markdown
     attributes:
       value: |
-        NEW FEATURE REQUEST OR BUG REPORT SUBMISSION FORM!
+        NEW FEATURE REQUEST/BUG REPORT SUBMISSION FORM!
   - type: input
     id: customer
     attributes:
-      label: Customer
+      label: Customer/Prospect
     validations:
       required: true
   - type: input
@@ -50,11 +50,12 @@ body:
   - type: checkboxes
     id: business-impact
     attributes:
-      label: What is the potential impact of not addressing this request?
-      description: Non Revenue Impact 
+      label: What is the potential non-revenue impact?
+      description: Impact of maintaining status quo
       options:
         - label: Unknown (It is a Support Request)
-        - label: Customer Sentiment Issue
+        - label: SLA Breach (It is a Support Request) 
+        - label: Customer/Prospect Sentiment Issue
         - label: Nice To Have
   - type: textarea
     id: action
@@ -68,7 +69,7 @@ body:
   - type: input 
     id: due-date
     attributes:
-      label: Customer requested target timeline (if any)?
+      label: Customer/Prospect requested target timeline (if any)?
       value: None
   - type: checkboxes
     id: product-area
