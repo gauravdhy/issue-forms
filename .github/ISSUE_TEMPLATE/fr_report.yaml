@@ -1,13 +1,13 @@
-name: Feature Request or Engineering Bug Report
+name: Feature Request Report
 description: File a Feature report
-title: "[FR or BR]: Customer/Prospect | ARR | Priority | Description"
+title: "Customer/Prospect | ARR | Priority | Description"
 assignees:
   - "gauravdhy"
 body:
   - type: markdown
     attributes:
       value: |
-        NEW FEATURE REQUEST/BUG REPORT SUBMISSION FORM!
+        NEW FEATURE REQUEST SUBMISSION FORM!
   - type: input
     id: customer
     attributes:
@@ -93,19 +93,3 @@ body:
     attributes:
       label: Linked Issues (separate by ; )
       value: None
-  - type: dropdown
-    id: engineering-effort-estimate
-    attributes:
-      label: Effort Estimate
-      options:
-        - Estimate Unknown
-        - X Large
-        - Large
-        - Medium
-        - Small
-        - Tiny
-  - type: input 
-    id: commitment
-    attributes:
-      label: Engineering Committed Timeframe/Release
-      value: TBD
