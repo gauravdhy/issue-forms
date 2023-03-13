@@ -57,7 +57,7 @@ body:
       description: Tell us more about this bug. If logs are too long, attach them to the issue.
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: version
     attributes:
       label: Teleport Version
@@ -68,7 +68,7 @@ body:
     id: repro-steps
     attributes:
       label: Repro Steps
-      description: What are the steps to reproduce this issue
+      description: What are the steps to reproduce this issue?
     validations:
       required: true
   - type: checkboxes
