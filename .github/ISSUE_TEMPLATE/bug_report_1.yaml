@@ -1,4 +1,4 @@
-name: Bug Report
+name: Bug Report Test
 description: Submit a customer sensitive bug report.
 title: "[Bug]: Customer/Prospect Name | ARR | Priority | Description"
 labels: ["bug", "to-be-reviewed"]
