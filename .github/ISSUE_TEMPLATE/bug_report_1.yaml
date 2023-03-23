@@ -1,0 +1,133 @@
+name: Bug Report
+description: Submit a customer sensitive bug report.
+title: "[Bug]: Customer/Prospect Name | ARR | Priority | Description"
+labels: ["bug", "to-be-reviewed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit a customer sensitive bug report.
+  - type: dropdown
+    id: existing-or-prospective
+    attributes:
+      label: Is this request for an existing or prospective customer?
+      options:
+        - Existing customer
+        - Prospective customer
+    validations:
+      required: true
+  - type: input
+    id: customer-name
+    attributes:
+      label: Customer name
+    validations:
+      required: true
+  - type: input
+    id: arr
+    attributes:
+      label: ARR
+      description: Use estimated ARR for prospective customers.
+      placeholder: $123,456
+    validations:
+      required: true
+  - type: input
+    id: revenue-impact
+    attributes:
+      label: Revenue impact (+ net new / - net loss)
+      description: Use `+` for upsells and `-` for contractions.
+      placeholder: + $123,456
+    validations:
+      required: true
+  - type: dropdown
+    id: revenue-impact-probability
+    attributes:
+      label: Probability of revenue impact?
+      options:
+        - No Impact
+        - Low
+        - Medium
+        - High
+        - Certain
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Tell us more about this bug. If logs are too long, attach them to the issue.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Teleport Version(s)
+      description: In which teleport version was this issue noticed?
+    validations:
+      required: true
+  - type: dropdown
+    id: cloud-or-self-hosted
+    attributes:
+      label: Cloud od Self-hosted?
+      options:
+        - Cloud
+        - Self-hosted
+        - Both
+    validations:
+      required: true      
+  - type: textarea
+    id: repro-steps-metrics
+    attributes:
+      label: Repro Steps and Metrics
+      description: What are the steps to reproduce this issue? Also, please share related metrics (if any). 
+    validations:
+      required: true
+  - type: checkboxes
+    id: business-impact
+    attributes:
+      label: Potential non-revenue impact?
+      description: Impact of maintaining the status quo.
+      options:
+        - label: Unknown (it's a support request)
+        - label: SLA Breach (it's a support request) 
+        - label: Customer/Prospect Sentiment Issue
+        - label: Nice-to-have
+  - type: textarea
+    id: action
+    attributes:
+      label: What are the desired outcomes from the Engineering and Product Teams?
+      description: For example, are you looking for someone to hop on a call with the customer to debug? Is the bug well understood at this point and you are just looking for a timeline for the fix?
+    validations:
+      required: true
+  - type: input 
+    id: due-date
+    attributes:
+      label: If any, specify customer target timeline? Use YYYY/MM/DD format.
+      placeholder: 1989/11/09
+  - type: checkboxes
+    id: product-area
+    attributes:
+      label: Product area
+      description: What area does this request relate to?
+      options:
+        - label: SSH
+        - label: K8
+        - label: Database
+        - label: Application
+        - label: Windows
+        - label: Machine ID
+        - label: Integrations
+        - label: Other
+    validations:
+      required: true
+  - type: input
+    id: other-product-area
+    attributes:
+      label: If "Other" was selected above, specify the product area.
+  - type: input
+    id: other-customers
+    attributes:
+      label: If any, add additional customers (separate by `;`).
+  - type: input 
+    id: linked-issues
+    attributes:
+      label: If any, linked issues from the public repository (separate by `;`).
