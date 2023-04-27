@@ -1,0 +1,28 @@
+name: New Theme
+description: Revenue Feature Requests Theme 
+title: "[Theme]: Priority | Description"
+labels: ["theme"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Revenue Feature Requests Theme
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the theme
+    validations:
+      required: true
+  - type: textarea
+    id: action
+    attributes:
+      label: Why does it matter?
+      description: For example, if it doesn't happen we're going to lose X amount of revenue
+    validations:
+      required: true
+  - type: input 
+    id: due-date
+    attributes:
+      label: If any, specify customer target timeline? Use YYYY/MM/DD format.
+      placeholder: 1989/11/09
