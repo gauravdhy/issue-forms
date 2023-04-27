@@ -18,7 +18,7 @@ body:
     id: action
     attributes:
       label: Why does it matter?
-      description: For example, if it doesn't happen we're going to lose X amount of revenue
+      description: For example, if it does not happen we are going to lose X amount of revenue
     validations:
       required: true
   - type: input 
