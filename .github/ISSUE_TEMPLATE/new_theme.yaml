@@ -1,6 +1,6 @@
 name: New Theme
 description: Revenue Feature Requests Theme 
-title: "Revenue Top Request: FY 202X Q | Priority | Theme Description"
+title: "Revenue Top Request: FY 202X Q | Priority Y | Theme Description"
 labels: ["theme"]
 body:
   - type: markdown
